@@ -1,0 +1,62 @@
+#toggleFeedbackContent {
+	text-align: center;
+}
+
+.feedback-icon {
+  font-size: 2em;
+	cursor: pointer;
+}
+
+.feedback-icon:hover {
+	color: #00A9E0;
+}
+
+.feedback-icon-not-selected {
+	color: #0a0a0a;
+}
+
+.feedback-reaction {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback-reaction td {
+  width: 25%;
+	text-align: center;
+}
+
+.feedback-hidden {
+	display: none;
+}
+
+.feedback-text.feedback-text-selected {
+  display: block;
+}
+
+.feedback-header-label {
+ font-size: 1.3em;
+ padding: 0 0 0 10px;
+ color: white;
+}
+
+.feedback-content {
+ display: block;
+ padding: 20px;
+ color: white;
+}
+
+#feedbackComment {
+	font-size: 1.2em;
+  width: 90%;
+	color : black;
+}
+
+#feedbackSubmit {
+  width: 30%;
+  height: 28px;
+  background: #00A9E0;
+}
+
+#feedbackSubmitted {
+	font-size: 1.3em;
+}
