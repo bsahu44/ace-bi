@@ -239,6 +239,26 @@
 .bi-slideout .sfc-listcheckbox-filter  .sf-element-list-box-item, #toggleHelpContent {
  color: white;
 }
+
+
+.bi-screen-slideout-content {
+  position:absolute;
+  bottom:0;
+  height: 60px !important;
+  width: 100% !important;
+}
+
+.bi-slideout-accordion-screen-label {
+  text-align: center;
+  color:white; 
+  padding:10px;
+}
+
+.bi-slideout-accordion-screen-label:hover {
+    cursor : pointer;
+    color: yellow;
+}
+
 /*
 .HtmlTextArea.sf-focusable < .bi-toolbar, .StyledScrollbar < .HtmlTextArea.sf-focusable ,  .sf-element-visual .sfc-text-area < .StyledScrollbar < .HtmlTextArea.sf-focusable {
   width: 100%;
