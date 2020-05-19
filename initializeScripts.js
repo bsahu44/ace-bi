@@ -3,25 +3,25 @@ function importScripts(envDetails){
   var urlLib = {
     'development' :{
       'icons':'http://10.52.192.30:8080/ClaimSearch/Standard/fonts/icomoon/icons.min.css',
-      'styles':'https://github.com/bsahu44/ace-bi/blob/master/css/bi_dashboard.css',
-      'js':'https://github.com/bsahu44/ace-bi/blob/master/js/bi_dash.js'
+      'styles':'https://bsahu44.github.io/ace-bi/css/bi_dashboard.css',
+      'js':'https://bsahu44.github.io/ace-bi/js/bi_dash.js'
     },
     'test' :{
       'icons':'https://d3mch2x00c5eox.cloudfront.net/7.11/Vader/Test/assets/fonts/icomoon/icons.min.css',
-      'styles':'https://github.com/bsahu44/ace-bi/blob/master/css/bi_dashboard.css',
-      'js':'https://github.com/bsahu44/ace-bi/blob/master/js/bi_dash.js',
+      'styles':'https://bsahu44.github.io/ace-bi/css/bi_dashboard.css',
+      'js':'https://bsahu44.github.io/ace-bi/js/bi_dash.js',
       'sentimentJS' : 'https://d3mch2x00c5eox.cloudfront.net/7.11/Vader/Test/assets/sentimentWidget/sentimentJS.min.js',
       'sentimentCSS' : 'https://d3mch2x00c5eox.cloudfront.net/7.11/Vader/Test/assets/sentimentWidget/sentimentCSS.min.css'
     },
     'acceptance' :{
       'icons':'https://d3mch2x00c5eox.cloudfront.net/7.11/Vader/Acceptance/assets/fonts/icomoon/icons.min.css',
-      'styles':'https://github.com/bsahu44/ace-bi/blob/master/css/bi_dashboard.css',
-      'js':'https://github.com/bsahu44/ace-bi/blob/master/js/bi_dash.js'
+      'styles':'https://bsahu44.github.io/ace-bi/css/bi_dashboard.css',
+      'js':'https://bsahu44.github.io/ace-bi/js/bi_dash.js'
     },
     'production' :{
       'icons':'https://d3mch2x00c5eox.cloudfront.net/7.11/Vader/Production/assets/fonts/icomoon/icons.min.css',
-      'styles':'https://github.com/bsahu44/ace-bi/blob/master/css/bi_dashboard.css',
-      'js':'https://github.com/bsahu44/ace-bi/blob/master/js/bi_dash.js',
+      'styles':'https://bsahu44.github.io/ace-bi/css/bi_dashboard.css',
+      'js':'https://bsahu44.github.io/ace-bi/js/bi_dash.js',
       'ga':'https://d3mch2x00c5eox.cloudfront.net/7.11/Vader/Production/assets/ga.min.js'
     }
   };
