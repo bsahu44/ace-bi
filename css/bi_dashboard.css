@@ -94,12 +94,18 @@
     border-top: 1px solid #dcdcdc;
 }
 .bi-toolbar .bi-toolbar-item:last-child {
-   position: absolute;
-   bottom: 0px;
-   left: 0;
-   border-top: 1px solid #efefef;
-   border-bottom: 1px solid #dcdcdc;
+   border-top: none;
+   border-bottom: 1px solid #efefef;
 }
+
+.bi-toolbar #toggleResolution {
+  position: absolute !important;
+  bottom: 0px !important;
+  border-top: 1px solid #efefef !important;
+  border-bottom: 1px solid #dcdcdc !important; 
+}
+
+
 .bi-slideout {
     position: fixed;
     top: 0px;
@@ -245,9 +251,8 @@
 
 .bi-slideout-accordion-screen-label {
   text-align: center;
-  color:white; 
+  color:white;
   padding:10px;
-  font-size: 12px;
 }
 
 .bi-slideout-accordion-screen-label:hover {
