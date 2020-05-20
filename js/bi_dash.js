@@ -50,9 +50,9 @@ $("body").on("click", ".bi-toolbar-item-action", function() {
 	if ($("#slideoutContent .bi-slideout-accordion-item-selected .has-list-box-property").length > 0){
 		fixPropertyControls();
 	}
-  if (id == "toggleResolution"){
-    $('.bi-slideout').css({"top": "50%", "height": "50%"});
-  }
+  	if (id == "toggleResolution"){
+    		$(".bi-slideout").css({"top": "50%", "height": "50%"});
+  	}
   
 	$("#slideoutFilter").toggleClass("bi-slideout-hide");
 	$("#slideoutHeader").toggleClass("bi-slideout-header-hide");
