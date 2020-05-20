@@ -50,6 +50,7 @@ $("body").on("click", ".bi-toolbar-item-action", function() {
 	if ($("#slideoutContent .bi-slideout-accordion-item-selected .has-list-box-property").length > 0){
 		fixPropertyControls();
 	}
+  $('.bi-slideout').css({"top": "50%", "height": "50%"});
 	$("#slideoutFilter").toggleClass("bi-slideout-hide");
 	$("#slideoutHeader").toggleClass("bi-slideout-header-hide");
 	$("#slideoutContent").toggleClass("bi-slideout-content-hide");
@@ -92,9 +93,7 @@ $("body").on("click", ".bi-slideout-accordion-item-header", function() {
 	$(this).find("#accordionArrow").toggleClass("icon-ic_arrow_drop_up_48px icon-ic_arrow_drop_down_48px");
 });
 
-$("body").on("click", "#toggleResolution", function() {
-  $('.bi-slideout').css({"top": "50%", "height": "50%"});
-});
+
 
 
 /*Helper References
