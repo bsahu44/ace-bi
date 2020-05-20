@@ -51,7 +51,7 @@ $("body").on("click", ".bi-toolbar-item-action", function() {
 		fixPropertyControls();
 	}
   	if (id == "toggleResolution"){
-    		$(".bi-slideout").css({"top": "75%", "height": "25%"});
+    		$(".bi-slideout").css({"top": "50%", "height": "150px"});
  	 }
   
 	$("#slideoutFilter").toggleClass("bi-slideout-hide");
