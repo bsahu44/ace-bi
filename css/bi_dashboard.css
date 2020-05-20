@@ -253,10 +253,11 @@
   text-align: center;
   color:white; 
   padding:10px;
+  font-size: 12px;
 }
 
 .bi-slideout-accordion-screen-label:hover {
-    background: #dcdcdc;
+    cursor: pointer;
     color: yellow;
 }
 
