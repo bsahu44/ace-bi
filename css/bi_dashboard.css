@@ -94,8 +94,11 @@
     border-top: 1px solid #dcdcdc;
 }
 .bi-toolbar .bi-toolbar-item:last-child {
-   border-top: none;
-   border-bottom: 1px solid #efefef;
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   border-top: 1px solid #efefef;
+   border-bottom: 1px solid #dcdcdc;
 }
 .bi-slideout {
     position: fixed;
@@ -252,12 +255,6 @@
     color: yellow;
 }
 
-#toggleResolution {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  border-top: 1px solid #efefef;
-}
 /*
 .HtmlTextArea.sf-focusable < .bi-toolbar, .StyledScrollbar < .HtmlTextArea.sf-focusable ,  .sf-element-visual .sfc-text-area < .StyledScrollbar < .HtmlTextArea.sf-focusable {
   width: 100%;
