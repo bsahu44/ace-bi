@@ -59,6 +59,7 @@ $("body").on("click", ".bi-toolbar-item-action", function() {
 });
 
 $("body").on("click", "#slideoutClose", function() {
+  $('.bi-slideout').css({"top": "0px", "height": "inherit"});
 	$("#slideoutFilter").toggleClass("bi-slideout-hide");
 	$("#slideoutHeader").toggleClass("bi-slideout-header-hide");
 	$("#slideoutContent").toggleClass("bi-slideout-content-hide");
@@ -90,6 +91,11 @@ $("body").on("click", ".bi-slideout-accordion-item-header", function() {
 	hiddenElement.toggleClass("bi-slideout-accordion-item-content-selected");
 	$(this).find("#accordionArrow").toggleClass("icon-ic_arrow_drop_up_48px icon-ic_arrow_drop_down_48px");
 });
+
+$("body").on("click", "#toggleResolution", function() {
+  $('.bi-slideout').css({"top": "50%", "height": "50%"});
+});
+
 
 /*Helper References
 /*JQuery Drop Down Fix */
