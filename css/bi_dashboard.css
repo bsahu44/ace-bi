@@ -95,7 +95,6 @@
 }
 .bi-toolbar .bi-toolbar-item:last-child {
    border-top: none;
-   border-bottom: 1px solid #efefef;
 }
 
 .bi-toolbar #toggleResolution {
