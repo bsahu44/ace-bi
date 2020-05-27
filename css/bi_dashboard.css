@@ -105,7 +105,7 @@
     position: fixed;
     top: 0px;
     left: 0;
-    height: 70%;
+    height: 80%;
     display: table;
     z-index: 20 !important;
     width: 300px;
@@ -126,9 +126,9 @@
     top: 80%;
     left: 0;
     height: 20%;
-    display: table;
+    display: none;
     z-index: 20 !important;
-    width: 400px;
+    width: 300px;
     overflow: auto;
     margin: 0;
     padding: 0 10px;
