@@ -126,7 +126,7 @@
     top: 80%;
     left: 0;
     height: 20%;
-    display: none;
+    display: table;
     z-index: 20 !important;
     width: 300px;
     overflow: auto;
@@ -144,6 +144,7 @@
 .bi-slideout-hide {
     width: 0;
     padding: 0;
+    display : none
 }
 .bi-slideout-header {
     display: table;
