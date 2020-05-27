@@ -105,7 +105,7 @@
     position: fixed;
     top: 0px;
     left: 0;
-    height: inherit;
+    height: 80%;
     display: table;
     z-index: 20 !important;
     width: 300px;
@@ -127,8 +127,7 @@
     left: 0;
     height: 20%;
     display: table;
-    z-index: 20 !important;
-    width: 300px;
+    width: 500px;
     overflow: auto;
     margin: 0;
     padding: 0 10px;
