@@ -35,20 +35,18 @@
 .sf-element-document .sf-element-page .sf-element-visualization-area .sf-element-visual {
  box-shadow:rgba(0,0,0,0.2) 2px 2px 2px 0px;
 }
-
 .sfc-text-area{
     background: white;
     padding:0 !important;
     font-family: 'roboto_regular' !important;
 }
-
 .sfc-text-area.sfpc-first-row.sfpc-first-column {
   border-radius: 0 0 0 0 !important;
 }
-
 .sf-element-visual-content.sfc-text-area, .sf-element-visual-content.sfc-text-area > .StyledScrollbar ,  .sf-element-visual-content.sfc-text-area > .StyledScrollbar > .HtmlTextArea {
     width: 100% !important;
 }
+
 .bi-toolbar {
     display: block;
     width: 100%;
@@ -96,12 +94,11 @@
 .bi-toolbar .bi-toolbar-item:last-child {
    border-top: none;
 }
-
 .bi-toolbar #toggleResolution {
   position: absolute !important;
   bottom: 0px !important;
   border-top: 1px solid #efefef !important;
-  border-bottom: none !important; 
+  border-bottom: none !important;
 }
 
 .bi-slideout {
@@ -123,20 +120,20 @@
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
-.bi-slideout.bi-slideout-hide {
+.bi-slideout-hide {
     width: 0;
     padding: 0;
 }
-.bi-slideout .bi-slideout-header {
+.bi-slideout-header {
     display: table;
     width: 100%;
     height: 40px;
     border-bottom: 1px solid #3c6f9b;
 }
-.bi-slideout .bi-slideout-header.bi-slideout-header-hide {
+.bi-slideout-header.bi-slideout-header-hide {
     display: none;
 }
-.bi-slideout .bi-slideout-header .bi-slideout-header-close {
+.bi-slideout-header .bi-slideout-header-close {
     display: table-cell;
     width: 20px;
     font-size: 2em;
@@ -147,10 +144,10 @@
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
-.bi-slideout .bi-slideout-header .bi-slideout-header-close:hover {
+.bi-slideout-header .bi-slideout-header-close:hover {
       color: #00A9E0;
 }
-.bi-slideout .bi-slideout-header-label {
+.bi-slideout-header-label {
     display: table-cell;
     vertical-align: middle;
     font-size: 2em;
@@ -158,7 +155,7 @@
     color: white;
 }
 
-.bi-slideout .bi-slideout-content {
+.bi-slideout-content {
    display: block;
    width: 100%;
    height: 95%;
@@ -166,7 +163,7 @@
    overflow: auto;
 }
 
-.bi-slideout .bi-slideout-content.bi-slideout-content-hide {
+.bi-slideout-content.bi-slideout-content-hide {
   display: none;
 }
 
@@ -175,7 +172,7 @@
   height : 0;
 }
 
-.bi-slideout .bi-slideout-accordion {
+.bi-slideout-accordion {
  display: block;
  width: 100%;
  overflow: auto;
@@ -189,7 +186,7 @@
    border-bottom: 1px solid #3c6f9b;
 }
 
-.bi-slideout .bi-slideout-accordion .bi-slideout-accordion-item {
+.bi-slideout-accordion .bi-slideout-accordion-item {
  display: block;
  border-bottom: 1px solid #3c6f9b;
  padding: 0 0 5px 0;
@@ -198,13 +195,13 @@
  transition: all 0.25s ease-out;
 }
 
-.bi-slideout .bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-header {
+.bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-header {
  display: table;
  width: 100%;
  cursor: pointer;
 }
 
-.bi-slideout .bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-header .bi-slideout-accordion-item-header-label {
+.bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-header .bi-slideout-accordion-item-header-label {
  display: table-cell;
  padding: 0 0 0 10px;
  color: white;
@@ -225,17 +222,17 @@
    font-weight: bold;
 }
 
-.bi-slideout .bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-content {
+.bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-content {
  display: none;
  padding: 20px;
  color: white;
 }
 
-.bi-slideout .bi-slideout-accordion .bi-slideout-accordion-item.bi-slideout-accordion-item-selected {
+.bi-slideout-accordion .bi-slideout-accordion-item.bi-slideout-accordion-item-selected {
  border-left: 4px solid #40C1AC;
 }
 
-.bi-slideout .bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-content.bi-slideout-accordion-item-content-selected {
+.bi-slideout-accordion .bi-slideout-accordion-item .bi-slideout-accordion-item-content.bi-slideout-accordion-item-content-selected {
  display: block;
 }
 
@@ -245,6 +242,26 @@
 
 .bi-slideout .sfc-listcheckbox-filter  .sf-element-list-box-item, #toggleHelpContent {
  color: white;
+}
+
+.bi-slideout-resolution {
+    position: fixed;
+    top: 80%;
+    left: 0;
+    height: 20%;
+    display: table;
+    z-index: 20 !important;
+    width: 300px;
+    overflow: auto;
+    margin: 0;
+    padding: 0 10px;
+    background: #00263A;
+    border: 1px solid #efefef;
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .bi-slideout-accordion-screen-label {
