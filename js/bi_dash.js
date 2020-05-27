@@ -41,33 +41,48 @@ $(document).ready(function(){
 
 $("body").on("click", ".bi-toolbar-item-action", function() {
 	var id = this.id;
-	$("#slideoutLabel").html(id.substring(6));
-	$("#"+id+"Content").detach().appendTo('#slideoutContent');
-	/* 7.11 JQuery Fix */
-	if ($("#slideoutContent .bi-slideout-accordion-item-selected .has-list-box-filter").length > 0){
-		fixListBoxFilters($(".bi-slideout-accordion-item-content-selected"));
-	}
-	if ($("#slideoutContent .bi-slideout-accordion-item-selected .has-list-box-property").length > 0){
-		fixPropertyControls();
-	}
-  	if (id == "toggleResolution"){
-    		$(".bi-slideout").css({"top": "80%", "height": "20%"});
+	
+  /*Resolution button slideout*/
+  if (id == "toggleResolution"){
+    $("#slideoutResolutionLabel").html(id.substring(6));
+    $("#"+id+"Content").detach().appendTo('#slideoutResolutionContent');
+    $("#slideoutResolution").toggleClass("bi-slideout-hide");
+    $("#slideoutResolutionHeader").toggleClass("bi-slideout-header-hide");
+    $("#slideoutResolutionContent").toggleClass("bi-slideout-content-hide");
  	 }
-  
-	$("#slideoutFilter").toggleClass("bi-slideout-hide");
-	$("#slideoutHeader").toggleClass("bi-slideout-header-hide");
-	$("#slideoutContent").toggleClass("bi-slideout-content-hide");
-	if ($("#slideoutContent .bi-slideout-filter-dropdown").length > 0){
-		fixPropertyControls();
-	}
+  else {
+    $("#slideoutLabel").html(id.substring(6));
+   	$("#"+id+"Content").detach().appendTo('#slideoutContent');
+    $("#slideoutFilter").toggleClass("bi-slideout-hide");
+   	$("#slideoutHeader").toggleClass("bi-slideout-header-hide");
+   	$("#slideoutContent").toggleClass("bi-slideout-content-hide");
+   	if ($("#slideoutContent .bi-slideout-filter-dropdown").length > 0){
+   		fixPropertyControls();
+   	}
+    /* 7.11 JQuery Fix */
+  	if ($("#slideoutContent .bi-slideout-accordion-item-selected .has-list-box-filter").length > 0){
+  		fixListBoxFilters($(".bi-slideout-accordion-item-content-selected"));
+  	}
+  	if ($("#slideoutContent .bi-slideout-accordion-item-selected .has-list-box-property").length > 0){
+  		fixPropertyControls();
+  	}
+   }
+
+	
 });
 
 $("body").on("click", "#slideoutClose", function() {
-  	$(".bi-slideout").css({"top": "0px", "height": "inherit"});
 	$("#slideoutFilter").toggleClass("bi-slideout-hide");
 	$("#slideoutHeader").toggleClass("bi-slideout-header-hide");
 	$("#slideoutContent").toggleClass("bi-slideout-content-hide");
 	$("#slideoutContent").children("div").eq(0).detach().appendTo('.bi-slideout-hidden-elements');
+});
+
+$("body").on("click", "#slideoutResolutionClose", function() {
+	$("#slideoutResolution").toggleClass("bi-slideout-hide");
+	$("#slideoutResolutionHeader").toggleClass("bi-slideout-header-hide");
+	$("#slideoutResolutionContent").toggleClass("bi-slideout-content-hide");
+	$("#slideoutResolutionContent").children("div").eq(0).detach().appendTo('.bi-slideout-hidden-elements');
 });
 
 $("body").on("click", ".action-button", function() {
