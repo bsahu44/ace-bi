@@ -123,11 +123,12 @@
 
 .bi-slideout-resolution {
     position: fixed;
-    top: 90%;
+    top: 0px;
     left: 0;
     height: 20%;
     display: table;
-    width: 300px;
+    z-index: 20 !important;
+    width: 200px;
     overflow: auto;
     margin: 0;
     padding: 0 10px;
