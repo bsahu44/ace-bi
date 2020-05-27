@@ -120,6 +120,27 @@
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
+
+.bi-slideout-resolution {
+    position: fixed;
+    top: 80%;
+    left: 0;
+    height: 20%;
+    display: table;
+    z-index: 20 !important;
+    width: 300px;
+    overflow: auto;
+    margin: 0;
+    padding: 0 10px;
+    background: #00263A;
+    border: 1px solid #efefef;
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
 .bi-slideout-hide {
     width: 0;
     padding: 0;
@@ -244,25 +265,7 @@
  color: white;
 }
 
-.bi-slideout-resolution {
-    position: fixed;
-    top: 80%;
-    left: 0;
-    height: 20%;
-    display: table;
-    z-index: 20 !important;
-    width: 300px;
-    overflow: auto;
-    margin: 0;
-    padding: 0 10px;
-    background: #00263A;
-    border: 1px solid #efefef;
-    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
+
 
 .bi-slideout-accordion-screen-label {
   text-align: center;
