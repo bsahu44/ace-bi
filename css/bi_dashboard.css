@@ -127,7 +127,6 @@
     left: 0;
     height: 30%;
     display: table;
-    z-index: 20 !important;
     width: 200px;
     overflow: auto;
     margin: 0;
