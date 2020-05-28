@@ -144,7 +144,7 @@
 .bi-slideout-hide {
     width: 0;
     padding: 0;
-    display : none
+    opacity : 0;
 }
 .bi-slideout-header {
     display: table;
