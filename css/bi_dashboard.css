@@ -125,7 +125,7 @@
     position: fixed;
     top: 80%;
     left: 0;
-    height: 20%;
+    height: 150px;
     display: table;
     z-index: 20 !important;
     width: 300px;
