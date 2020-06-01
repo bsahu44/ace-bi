@@ -123,7 +123,7 @@
 
 .bi-slideout-resolution {
     position: fixed;
-    top: 645px;
+    bottom: 2px;
     left: 0;
     height: 100px;
     display: table;
