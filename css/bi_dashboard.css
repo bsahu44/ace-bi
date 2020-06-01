@@ -123,9 +123,9 @@
 
 .bi-slideout-resolution {
     position: fixed;
-    top: 80%;
+    bottom : 0px;
     left: 0;
-    height: 150px;
+    height: 100px;
     display: table;
     z-index: 20 !important;
     width: 300px;
