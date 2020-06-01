@@ -105,7 +105,7 @@
     position: fixed;
     top: 0px;
     left: 0;
-    height: 80%;
+    height: inherit;
     display: table;
     z-index: 20 !important;
     width: 300px;
@@ -123,7 +123,7 @@
 
 .bi-slideout-resolution {
     position: fixed;
-    bottom : 0px;
+    top: 645px;
     left: 0;
     height: 100px;
     display: table;
